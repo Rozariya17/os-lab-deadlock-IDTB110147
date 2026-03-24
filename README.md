@@ -34,7 +34,7 @@ In this level, a timeout is used to prevent processes from waiting indefinitely 
 When the lock is held by another process, the script pauses briefly and then exits with an error message instead of freezing. This breaks the infinite wait condition.
 This strategy improves server health by preventing stuck processes, freeing system resources, and allowing other operations to continue instead of being permanently blocked.
 
-Level 7: Safe Ejection (Teardown)
+## Level 7: Safe Ejection (Teardown)
 ![Level 7 Screenshot](Screenshots/checkpoint6.jpg)
 **Explaination:**
 In this level, we safely unmount virtual vaults and detach loopback devices instead of deleting them while mounted. Proper teardown prevents file system corruption, orphaned devices, and potential data loss.
